@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+.navbar{
+	border-bottom: .5px solid #eee
+}
+.search-input{
+	border: 0.5px solid #DCDCDC;
+	border-radius: 25px 0px 0px 25px;
+	height: 2.5rem;
+	background-color: #DCDCDC;
+}
+.search-input::placeholder{
+	text-align: center;
+}
+.search-input:focus{
+	outline: none;
+}
+.search-button{
+	border:.5px solid #DCDCDC;
+	border-radius: 0px 25px 25px 0px;
+	height: 2.5rem;
+	background-color: #DCDCDC;
+}
+.search-button:focus{
+	outline: none;
+}
+.msg-num{
+	position: absolute;
+	background-color: red;
+	color: white;
+	border-radius: 25px;
+	width:20px;
+	height: 20px;
+	font-weight: bolder;
+	font-size: 13px;
+	top: 1rem;
+}
+.main-color{
+	color:blueviolet;
+}
+.colm{
+	border-right: 1px solid #eee;
+	
+}
+.bg-maincolor{
+	background-color: #6a5acd;
+	color: white;
+	height: fit-content;
+
+}
+.info{
+	position: fixed;
+	height: 100vh;
+	background-color:#6a5acd;
+	width: 33%;
+}
+.info__{
+	position: fixed;
+	height: 100vh;
+	background-color:#6a5acd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.image{
+	border: 5px solid #ccccff;
+}
+.online{
+	border: 5px solid #28a745
+}
+.blur{
+	filter: blur(2px);
+	-webkit-filter: blur(8px);
+}
+.mt-10{
+	position: relative;
+	z-index: 2;
+	margin-top: -7rem;
+}
+.white{
+	color:white;
+}
+.msg-body-content{
+	width: 50%;
+	position: fixed;
+	overflow: auto;
+	height: 100%
+}
+.message{
+	width: 100%;
+	display: flex;
+	padding-top: 2rem
+}
+.message p{
+	padding: 10px;
+	border-radius: 25px
+}
+.bg-lightgray{
+	height: fit-content;
+	background-color: #DCDCDC;
+
+}
+.message-input{
+	background-color: #eee;
+	height: 4rem;
+	position: fixed;
+	bottom: 0;
+	width: 49%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: .5px solid #ced4da
+
+}
+.message-input form{
+	width: 100%;
+	display: flex;
+	
+
+}
+.message-input form input[type='text']{
+	border-right: none;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+.message-input form button{
+	color:blueviolet;
+	border-left: none;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-right:.5px solid #ced4da;
+	border-top: .5px solid #ced4da;
+	border-bottom: .5px solid #ced4da;
+	
+}
+.bg-white{
+	background-color: white
+}
+.search-user{
+	width: 100%
+}
+.search-user form {
+	display: flex;
+
+}
+.search-user form input[type='text']{
+	border-left: none;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.search-user form button{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	
+	border-right: none;
+	border-left:.5px solid #ced4da;
+	border-top: .5px solid #ced4da;
+	border-bottom: .5px solid #ced4da;
+}
+.friend-msg-list-container{
+	position: fixed;
+	overflow: auto;
+	height: 100%
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.friend-msg-list{
+	display: flex;
+	border-bottom: .5px solid #ced4da;
+}
+.friend-msg-list:hover{
+	background-color: #ced4da
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* home page*/
+.info-cards-content{
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: .5px;
+	border-radius: 25px;
+	background-color: #eee;
+	overflow: auto;
+	height: fit-content;
 }
